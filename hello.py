@@ -1,10 +1,12 @@
-def get_user_input():
-    first_name = input("What is your first name: ")
-    middle_initial = input("What is your middle initial: ")
-    last_name = input("What is your last name: ")
-    print(f'Hello {first_name} {middle_initial} {last_name}! Welcome to Code Louisville - Monday Night Python Class')
-def main():
-    get_user_input()
-if __name__ == "__main__":
-    main()
-
+def likely_reference(skit):
+    if skit == "Dead Parrot":
+        print("stiff")
+    elif skit == "Hungarian Phrasebook":
+        print("eels")
+    elif skit == "Lumberjack":
+        if len(skit) < 3:
+            print("sleeps all day")
+        else:
+            print("i'm okay")
+    else:
+        print("ni" * len(skit))
